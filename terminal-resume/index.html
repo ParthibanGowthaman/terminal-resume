@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">
+    <title>Parthiban Gowthaman</title>
+    <meta name="description" content="Parthiban Gowthaman's interactive terminal resume - type 'help' to get started">
+    <meta property="og:title" content="Parthiban Gowthaman | Terminal Resume">
+    <meta property="og:description" content="Interactive CLI-style resume website">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-midnight">
+    <div class="terminal-wrapper">
+        <div class="terminal" id="terminal">
+            <div class="terminal-title">
+                <div class="title-buttons">
+                    <span class="title-btn close"></span>
+                    <span class="title-btn minimize"></span>
+                    <span class="title-btn maximize"></span>
+                </div>
+                <span class="title-text">~/parthiban <span class="title-link">resume</span></span>
+                <div class="title-actions">
+                    <button class="help-btn" id="help-btn" aria-label="Show help">?</button>
+                </div>
+            </div>
+            <div class="terminal-body" id="terminal-body">
+                <div id="output" role="log" aria-live="polite"></div>
+            </div>
+            <div class="terminal-input">
+                <span class="input-prompt">&gt;</span>
+                <form id="command-form" autocomplete="off">
+                    <input
+                        type="text"
+                        id="command-input"
+                        placeholder="type a command..."
+                        aria-label="Command input"
+                        spellcheck="false"
+                        autocapitalize="none"
+                        autocorrect="off"
+                    >
+                </form>
+            </div>
+            <div class="terminal-status">
+                <div class="status-left">
+                    <span class="status-item" id="status-vibe">building things</span>
+                </div>
+                <div class="status-center">
+                    <span class="status-hint">shift+tab to cycle themes</span>
+                </div>
+                <div class="status-right">
+                    <span class="status-item" id="status-time">--:--</span>
+                    <span class="status-sep">|</span>
+                    <span class="status-item status-model" title="open to work">Open to Work</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="command-shortcuts">
+            <button class="cmd-shortcut" data-cmd="whoami">whoami</button>
+            <button class="cmd-shortcut" data-cmd="experience">experience</button>
+            <button class="cmd-shortcut" data-cmd="skills">skills</button>
+            <button class="cmd-shortcut" data-cmd="projects">projects</button>
+            <button class="cmd-shortcut" data-cmd="contact">contact</button>
+        </div>
+    </div>
+
+    <div id="music-player" class="music-player" aria-live="polite" aria-label="Retro soundtrack music player">
+        <div class="music-meta">
+            <span class="music-label">arcade radio</span>
+            <span id="music-title" class="music-title">select a track</span>
+        </div>
+        <div class="music-controls" role="group" aria-label="Music controls">
+            <button type="button" id="music-prev" class="music-btn" aria-label="Previous track">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="19 20 9 12 19 4 19 20"></polygon>
+                    <line x1="5" y1="19" x2="5" y2="5"></line>
+                </svg>
+            </button>
+            <button type="button" id="music-toggle" class="music-btn" aria-label="Play or pause">
+                <svg class="icon icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <svg class="icon icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="6" y="4" width="4" height="16"></rect>
+                    <rect x="14" y="4" width="4" height="16"></rect>
+                </svg>
+            </button>
+            <button type="button" id="music-next" class="music-btn" aria-label="Next track">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                    <line x1="19" y1="5" x2="19" y2="19"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="terminal.js"></script>
+    <script src="music.js"></script>
+</body>
+</html>
