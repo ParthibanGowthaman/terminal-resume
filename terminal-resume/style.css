@@ -429,8 +429,11 @@ a:hover {
 .command-shortcuts {
     display: flex;
     justify-content: center;
-    gap: var(--space-sm);
-    margin-top: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-tertiary);
+    border-top: 1px solid var(--border);
 }
 
 .cmd-shortcut {
@@ -559,12 +562,6 @@ a:hover {
         letter-spacing: -0.5px;
         white-space: pre;
         overflow-x: auto;
-    }
-
-    .command-shortcuts {
-        flex-wrap: wrap;
-        gap: var(--space-xs);
-        margin-top: var(--space-md);
     }
 
     .cmd-shortcut {
