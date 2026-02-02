@@ -378,6 +378,10 @@ const commands = {
 // ============================
 // UTILITY FUNCTIONS
 // ============================
+function isMobile() {
+  return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+}
+
 function appendOutput(text) {
   const output = document.getElementById("output");
   output.innerHTML += text;
@@ -550,7 +554,7 @@ async function executeCommand(input) {
         inputEl.disabled = true;
         await typeOutput(result + "\n");
         inputEl.disabled = false;
-        inputEl.focus();
+        if (!isMobile()) inputEl.focus();
       }
     }
   } else {
@@ -601,7 +605,7 @@ welcome to my terminal resume. type <span class="cmd">help</span> to see command
 `;
   scrollToBottom();
 
-  document.getElementById("command-input").focus();
+  if (!isMobile()) document.getElementById("command-input").focus();
 }
 
 // ============================
@@ -664,7 +668,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (state.isTyping && state.skipTyping) {
         state.skipTyping();
         input.disabled = false;
-        input.focus();
+        if (!isMobile()) input.focus();
       } else {
         appendOutput(`<span class="prompt">∴</span> <span class="accent">${input.value}</span>^C\n\n`);
         input.value = "";
@@ -678,7 +682,7 @@ document.addEventListener("DOMContentLoaded", () => {
         state.skipTyping();
         input.disabled = false;
       }
-      input.focus();
+      if (!isMobile()) input.focus();
     }
   });
 
@@ -687,7 +691,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const cmd = btn.dataset.cmd;
       if (cmd) {
         await executeCommand(cmd);
-        input.focus();
+        if (!isMobile()) input.focus();
       }
     });
   });
