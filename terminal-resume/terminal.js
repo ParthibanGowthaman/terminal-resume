@@ -596,9 +596,8 @@ async function boot() {
   await sleep(100);
 
   output.innerHTML += `
-  ML practitioner. LLM driver. problem solver.
-  welcome to my terminal resume. type <span class="cmd">help</span> to see commands.
-
+<div class="welcome-text">ML practitioner. LLM driver. problem solver.
+welcome to my terminal resume. type <span class="cmd">help</span> to see commands.</div>
 `;
   scrollToBottom();
 

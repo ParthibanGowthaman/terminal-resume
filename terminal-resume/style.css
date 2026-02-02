@@ -318,6 +318,7 @@ a:hover {
 #output {
     white-space: pre-wrap;
     word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #output .prompt { color: var(--accent); font-weight: 600; }
@@ -347,6 +348,12 @@ a:hover {
     font-size: 20px;
     letter-spacing: 4px;
     line-height: 1.4;
+}
+
+.welcome-text {
+    padding-left: 2ch;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 /* ===== INPUT LINE ===== */
