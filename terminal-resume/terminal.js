@@ -206,13 +206,13 @@ const commands = {
   download: {
     desc: "download resume",
     fn: () => {
-      return `
-  <span class="muted">To add a downloadable PDF:</span>
-  <span class="muted">1. Save your resume as resume.pdf in the project folder</span>
-  <span class="muted">2. The download link will work automatically</span>
-
-  <span class="warning">PDF not configured yet.</span>
-`;
+      const link = document.createElement("a");
+      link.href = "resume.pdf";
+      link.download = "Parthiban_Gowthaman_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      return `  <span class="success">Downloading resume...</span>`;
     },
   },
 
