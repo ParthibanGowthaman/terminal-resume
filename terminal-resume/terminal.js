@@ -178,7 +178,63 @@ const commands = {
 
   <span class="accent">[+] terminal-resume</span> <span class="success">[this site!]</span>
   <span class="muted">Interactive CLI-style resume website</span>
-  <span class="muted">Built with Claude Code, verified by a human</span>
+  Built with Claude Code, verified by a human.
+
+  <span class="accent">[+] cre-scenario-engine</span> <span class="muted">[ONCI]</span>
+  <span class="muted">Tools: Python, Claude Code, AI-assisted coding, statsmodels</span>
+  ONCI's Commercial Real Estate scenario analysis system needed a complete
+  rebuild to support evolving portfolio requirements. Rather than following
+  the traditional development cycle, I led the full rebuild using an
+  AI-assisted coding approach with Claude Code — designing architecture,
+  writing, and validating code collaboratively with AI. The entire system
+  was rebuilt from scratch and shipped in under a month, a timeline that
+  would typically take a quarter or more. The new engine supports dynamic
+  scenario modeling across CRE loan portfolios using macroeconomic
+  indicators, giving credit analysts richer stress-testing capabilities.
+
+  <span class="accent">[+] customer-insights-automation</span> <span class="muted">[ONCI]</span>
+  <span class="muted">Tools: Python, Claude API, Prompt Engineering</span>
+  ONCI's credit analysts were spending significant time manually rewriting
+  and polishing customer insight narratives — a repetitive task that required
+  no human judgment. I built an automated pipeline using the Claude API that
+  takes raw analyst inputs and generates clean, consistently structured
+  customer insight write-ups. The system integrates seamlessly into existing
+  workflows, reducing turnaround time and ensuring uniform quality of output
+  across the entire credit team.
+
+  <span class="accent">[+] genai-impact-naics-sic</span> <span class="muted">[ONCI]</span>
+  <span class="muted">Tools: Python, Claude API, Parallel Processing, Prompt Caching</span>
+  Analyzing GenAI disruption risk across industry codes hits hard limits in
+  Claude's UI due to sandbox constraints — running it at scale interactively
+  is simply not possible. I engineered a backend pipeline at ONCI using the
+  Claude API that runs 100 NAICS/SIC codes in parallel, with prompt caching
+  implemented to dramatically reduce token costs across repeated structural
+  prompts. This turned a manual, one-at-a-time analysis into a scalable
+  automated intelligence system — delivering industry-level GenAI impact
+  assessments efficiently and cost-effectively at a scale no UI-based tool
+  can match.
+
+  <span class="accent">[+] deep-research-analyst</span> <span class="muted">[ONCI]</span>
+  <span class="muted">Tools: Python, CrewAI, Multi-Agent Framework, Web Search, Claude</span>
+  Researching an industry using a standard LLM UI is a single-pass experience
+  — one query, one synthesis, one response. For deep due diligence on
+  NAICS/SIC codes, that's simply not enough. I built a multi-agent research
+  system at ONCI using CrewAI where specialized AI agents divide
+  responsibilities — market sizing, competitive landscape, GenAI disruption
+  risk, regulatory environment — work in parallel, and synthesize findings
+  into a structured, repeatable industry intelligence report. A credit analyst
+  simply inputs a NAICS or SIC code and receives a comprehensive research
+  brief that would otherwise take hours of manual web research to produce.
+
+  <span class="accent">[+] bea-census-data-automation</span> <span class="muted">[ONCI]</span>
+  <span class="muted">Tools: Python, BEA API, Census API, REST</span>
+  ONCI's credit team was manually downloading economic data from the Bureau
+  of Economic Analysis and US Census Bureau — a time-consuming, error-prone
+  process repeated across the team on a regular basis. I replaced this
+  entirely with a programmatic API integration layer, allowing any team
+  member to pull the latest BEA and Census datasets with a single API call.
+  This eliminated manual effort, ensured data freshness and consistency
+  across the team, and freed up analyst time for higher-value work.
 `;
     },
   },
