@@ -193,7 +193,7 @@ const commands = {
 
   <span class="accent">Bachelor of Engineering (BE)</span>
   <span class="muted">Electrical & Electronics Engineering</span>
-  <span class="muted">Anna University | 2005 - 2009</span>
+  <span class="muted">PSNA College of Engineering | Affiliated to Anna University | 2005 - 2009</span>
 
   <span class="muted">→ next:</span> <span class="cmd">skills</span>
 `;
