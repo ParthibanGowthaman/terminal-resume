@@ -744,7 +744,10 @@ async function boot() {
   output.innerHTML += `<span class="ascii-name bold accent">  PARTHIBAN</span>`;
   scrollToBottom();
 
-  const pitchOutput = commands.pitch.fn().replace('<span class="bold white">The Pitch</span>\n', '').replace('\n\n\n', '\n\n');
+  const pitchOutput = commands.pitch.fn()
+    .replace('<span class="bold white">The Pitch</span>\n', '')
+    .replace('\n\n\n', '\n\n')
+    .replace('  <span class="muted">→ start here:</span> <span class="cmd">whoami</span>', '  <span class="muted">want to know more? click</span> <span class="cmd">whoami</span> <span class="muted">·</span> <span class="cmd">experience</span> <span class="muted">·</span> <span class="cmd">skills</span> <span class="muted">·</span> <span class="cmd">projects</span> <span class="muted">·</span> <span class="cmd">contact</span> <span class="muted">below ↓</span>');
   await typeOutput(pitchOutput + "\n");
 
   if (!isMobile()) document.getElementById("command-input").focus();
