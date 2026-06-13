@@ -742,10 +742,13 @@ async function boot() {
   await sleep(100);
 
   output.innerHTML += `
-<div class="welcome-text">ML practitioner. LLM driver. problem solver.
-welcome to my terminal resume. type <span class="cmd">help</span> to see commands.</div>
+<div class="welcome-text">AI engineer building LLM-native systems in fintech.
+12+ years across data science, ML & applied AI  ·  open to Dubai / Abu Dhabi
+</div>
 `;
   scrollToBottom();
+
+  await typeOutput(commands.pitch.fn() + "\n");
 
   if (!isMobile()) document.getElementById("command-input").focus();
 }
