@@ -132,7 +132,7 @@ const commands = {
   <span class="accent">Predictive Data Analyst</span> <span class="muted">@ Quantium Analytics</span>
   <span class="muted">Jun 2013 - Apr 2015 | Hyderabad, India</span>
 
-  <span class="muted">→ next:</span> <span class="cmd">skills</span>
+  <span class="muted">→ next:</span> <span class="cmd">education</span>
 `;
     },
   },
@@ -194,6 +194,8 @@ const commands = {
   <span class="accent">Bachelor of Engineering (BE)</span>
   <span class="muted">Electrical & Electronics Engineering</span>
   <span class="muted">Anna University | 2005 - 2009</span>
+
+  <span class="muted">→ next:</span> <span class="cmd">skills</span>
 `;
     },
   },
