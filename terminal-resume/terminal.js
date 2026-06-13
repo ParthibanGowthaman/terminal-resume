@@ -31,7 +31,7 @@ const vibes = [
 ];
 
 // Available themes
-const themes = ["midnight", "phosphor", "amber", "matrix", "contrast"];
+const themes = ["midnight", "phosphor", "amber", "matrix", "contrast", "desert"];
 
 // ============================
 // COMMANDS REGISTRY
@@ -55,6 +55,7 @@ const commands = {
         '  <span class="cmd">projects</span>      notable projects',
         "",
         '  <span class="muted">--- connect ---</span>',
+        '  <span class="cmd">pitch</span>         30-second elevator pitch',
         '  <span class="cmd">contact</span>       find me online',
         '  <span class="cmd">download</span>      download resume PDF',
         "",
@@ -75,13 +76,14 @@ const commands = {
     fn: () => {
       return `
   <span class="bold white">Parthiban Gowthaman</span>
-  ┌────────────────────────────────────────────────┐
-  │  VP Machine Learning @ ONCI                     │
-  │  Location: Bengaluru, India                     │
-  │  Status: LLM Driver · Open to opportunities     │
-  └────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────┐
+  │  AI-native Engineer @ OakNorth Bank                  │
+  │  Pricing Optimization Pod                            │
+  │  Location: Bengaluru, India                          │
+  │  Target: Dubai / Abu Dhabi · Open to opportunities   │
+  └─────────────────────────────────────────────────────┘
 
-  12+ years in ML & analytics. Now driving LLM solutions.
+  12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech.
 
   type <span class="cmd">experience</span> to see my work history
   type <span class="cmd">skills</span> to see my technical stack
@@ -98,8 +100,8 @@ const commands = {
     desc: "ultra-short bio",
     fn: () => {
       return `
-  <span class="bold white">Parthiban Gowthaman</span> — VP Machine Learning @ ONCI.
-  12+ years in ML & analytics. Now driving LLM solutions.
+  <span class="bold white">Parthiban Gowthaman</span> — AI-native Engineer @ OakNorth Bank (Pricing Optimization).
+  12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech. Targeting Dubai / Abu Dhabi.
 `;
     },
   },
@@ -110,13 +112,16 @@ const commands = {
       return `
   <span class="bold white">Work Experience</span>
 
-  <span class="accent">VP Machine Learning</span> <span class="muted">@ ONCI</span>
-  <span class="muted">Apr 2025 - Present | Bengaluru, India</span>
+  <span class="accent">AI-native Engineer</span> <span class="muted">@ OakNorth Bank</span>
+  <span class="muted">Apr 2026 - Present | Pricing Optimization Pod | Bengaluru, India</span>
 
-  <span class="accent">DVP Machine Learning</span> <span class="muted">@ ONCI</span>
+  <span class="accent">VP Machine Learning</span> <span class="muted">@ OakNorth Credit Intelligence</span>
+  <span class="muted">Apr 2025 - Apr 2026 | Bengaluru, India</span>
+
+  <span class="accent">DVP Machine Learning</span> <span class="muted">@ OakNorth Credit Intelligence</span>
   <span class="muted">Apr 2023 - Apr 2025 | Bengaluru, India</span>
 
-  <span class="accent">AVP Machine Learning</span> <span class="muted">@ ONCI</span>
+  <span class="accent">AVP Machine Learning</span> <span class="muted">@ OakNorth Credit Intelligence</span>
   <span class="muted">Nov 2021 - May 2023 | Bengaluru, India</span>
 
   <span class="accent">Manager - Advanced Analytics COE</span> <span class="muted">@ Flex</span>
@@ -144,10 +149,28 @@ const commands = {
       return `
   <span class="bold white">Technical Skills</span>
 
-  <span class="accent">•</span> Python
-  <span class="accent">•</span> LLMs
-  <span class="accent">•</span> LLM Evals
+  <span class="accent">LLMs & AI Engineering</span>
+  <span class="accent">•</span> LLM Orchestration (LangChain, LlamaIndex, CrewAI)
   <span class="accent">•</span> Agentic Workflow Automation
+  <span class="accent">•</span> RAG Pipelines & Vector Databases
+  <span class="accent">•</span> LLM Evals & Prompt Engineering
+  <span class="accent">•</span> Claude API · Prompt Caching · Batch Processing
+
+  <span class="accent">Machine Learning & Data Science</span>
+  <span class="accent">•</span> Predictive Modelling & Statistical Analysis
+  <span class="accent">•</span> Time Series Forecasting
+  <span class="accent">•</span> Pricing Optimization
+  <span class="accent">•</span> Credit Risk & Financial Analytics
+
+  <span class="accent">Languages & Tools</span>
+  <span class="accent">•</span> Python · SQL
+  <span class="accent">•</span> REST APIs · BEA API · Census API
+  <span class="accent">•</span> Claude Code (AI-assisted development)
+  <span class="accent">•</span> Firecrawl
+
+  <span class="accent">Cloud Platforms</span>
+  <span class="accent">•</span> Azure ML Studio
+  <span class="accent">•</span> Google Cloud Platform
 
   <span class="muted">type</span> <span class="cmd">projects</span> <span class="muted">to see what I've built</span>
 `;
@@ -158,6 +181,12 @@ const commands = {
     desc: "education",
     fn: () => {
       return `
+  <span class="bold white">Certifications</span>
+
+  <span class="accent">AI Coding for Real Engineers</span>
+  <span class="muted">Matt Pocock | Jun 2026</span>
+  <span class="muted">Claude Code · Steering · Planning · Feedback Loops · AFK Agents · Human-in-the-Loop Patterns</span>
+
   <span class="bold white">Education</span>
 
   <span class="accent">Masters in Financial Economics</span>
@@ -176,13 +205,26 @@ const commands = {
       return `
   <span class="bold white">Projects</span>
 
+  <span class="accent">[+] mse-rate-intelligence-agent</span> <span class="muted">[OakNorth Bank]</span>
+  <span class="muted">Tools: Python, Claude API, Firecrawl, Agentic Workflow</span>
+  Treasury teams traditionally track competitor savings rates manually —
+  a slow, inconsistent process that misses time-sensitive signals. I built
+  an agentic system at OakNorth Bank that continuously monitors interest
+  rate data published on Money Saving Expert using Firecrawl for reliable
+  data extraction, and Claude for intelligent change detection. When rates
+  shift, the agent automatically alerts the treasury team with a structured
+  briefing — identifying which institutions are actively competing for
+  deposits and signalling who is looking to raise money in the current
+  rate environment. What was a manual, reactive process is now a
+  real-time competitive intelligence feed.
+
   <span class="accent">[+] terminal-resume</span> <span class="success">[this site!]</span>
   <span class="muted">Interactive CLI-style resume website</span>
   Built with Claude Code, verified by a human.
 
-  <span class="accent">[+] cre-scenario-engine</span> <span class="muted">[ONCI]</span>
+  <span class="accent">[+] cre-scenario-engine</span> <span class="muted">[OakNorth Credit Intelligence]</span>
   <span class="muted">Tools: Python, Claude Code, AI-assisted coding, statsmodels</span>
-  ONCI's Commercial Real Estate scenario analysis system needed a complete
+  OakNorth Credit Intelligence's Commercial Real Estate scenario analysis system needed a complete
   rebuild to support evolving portfolio requirements. Rather than following
   the traditional development cycle, I led the full rebuild using an
   AI-assisted coding approach with Claude Code — designing architecture,
@@ -192,9 +234,9 @@ const commands = {
   scenario modeling across CRE loan portfolios using macroeconomic
   indicators, giving credit analysts richer stress-testing capabilities.
 
-  <span class="accent">[+] customer-insights-automation</span> <span class="muted">[ONCI]</span>
+  <span class="accent">[+] customer-insights-automation</span> <span class="muted">[OakNorth Credit Intelligence]</span>
   <span class="muted">Tools: Python, Claude API, Prompt Engineering</span>
-  ONCI's credit analysts were spending significant time manually rewriting
+  OakNorth Credit Intelligence's credit analysts were spending significant time manually rewriting
   and polishing customer insight narratives — a repetitive task that required
   no human judgment. I built an automated pipeline using the Claude API that
   takes raw analyst inputs and generates clean, consistently structured
@@ -202,11 +244,11 @@ const commands = {
   workflows, reducing turnaround time and ensuring uniform quality of output
   across the entire credit team.
 
-  <span class="accent">[+] genai-impact-naics-sic</span> <span class="muted">[ONCI]</span>
+  <span class="accent">[+] genai-impact-naics-sic</span> <span class="muted">[OakNorth Credit Intelligence]</span>
   <span class="muted">Tools: Python, Claude API, Parallel Processing, Prompt Caching</span>
   Analyzing GenAI disruption risk across industry codes hits hard limits in
   Claude's UI due to sandbox constraints — running it at scale interactively
-  is simply not possible. I engineered a backend pipeline at ONCI using the
+  is simply not possible. I engineered a backend pipeline at OakNorth Credit Intelligence using the
   Claude API that runs 100 NAICS/SIC codes in parallel, with prompt caching
   implemented to dramatically reduce token costs across repeated structural
   prompts. This turned a manual, one-at-a-time analysis into a scalable
@@ -214,21 +256,21 @@ const commands = {
   assessments efficiently and cost-effectively at a scale no UI-based tool
   can match.
 
-  <span class="accent">[+] deep-research-analyst</span> <span class="muted">[ONCI]</span>
+  <span class="accent">[+] deep-research-analyst</span> <span class="muted">[OakNorth Credit Intelligence]</span>
   <span class="muted">Tools: Python, CrewAI, Multi-Agent Framework, Web Search, Claude</span>
   Researching an industry using a standard LLM UI is a single-pass experience
   — one query, one synthesis, one response. For deep due diligence on
   NAICS/SIC codes, that's simply not enough. I built a multi-agent research
-  system at ONCI using CrewAI where specialized AI agents divide
+  system at OakNorth Credit Intelligence using CrewAI where specialized AI agents divide
   responsibilities — market sizing, competitive landscape, GenAI disruption
   risk, regulatory environment — work in parallel, and synthesize findings
   into a structured, repeatable industry intelligence report. A credit analyst
   simply inputs a NAICS or SIC code and receives a comprehensive research
   brief that would otherwise take hours of manual web research to produce.
 
-  <span class="accent">[+] bea-census-data-automation</span> <span class="muted">[ONCI]</span>
+  <span class="accent">[+] bea-census-data-automation</span> <span class="muted">[OakNorth Credit Intelligence]</span>
   <span class="muted">Tools: Python, BEA API, Census API, REST</span>
-  ONCI's credit team was manually downloading economic data from the Bureau
+  OakNorth Credit Intelligence's credit team was manually downloading economic data from the Bureau
   of Economic Analysis and US Census Bureau — a time-consuming, error-prone
   process repeated across the team on a regular basis. I replaced this
   entirely with a programmatic API integration layer, allowing any team
@@ -248,8 +290,9 @@ const commands = {
   <span class="bold white">Contact</span>
 
   • <a href="https://www.linkedin.com/in/parthiban-gowthaman-50257017/" target="_blank" rel="noopener">LinkedIn</a>
+  • <a href="https://github.com/ParthibanGowthaman" target="_blank" rel="noopener">GitHub</a>
   • <a href="mailto:gowthamparthiban@gmail.com">Email</a>
-  • <span class="muted">Bengaluru, India</span>
+  • <span class="muted">Bengaluru, India · Open to Dubai / Abu Dhabi</span>
 `;
     },
   },
@@ -315,6 +358,48 @@ const commands = {
           : "\n  music player hidden.\n";
       }
       return '\n  <span class="error">music player not available</span>\n';
+    },
+  },
+
+  pitch: {
+    desc: "30-second pitch",
+    fn: () => {
+      return `
+  <span class="bold white">The Pitch</span>
+
+  I'm an AI engineer with 12+ years across data science, ML & applied AI —
+  now building LLM-native systems at OakNorth Bank in the Pricing
+  Optimization pod.
+
+  My edge: I don't just use AI tools, I build with them. Agentic pipelines,
+  RAG systems, multi-agent workflows, real-time intelligence agents — shipped
+  in production, in fintech, where accuracy and reliability actually matter.
+
+  I come from banking and credit intelligence, which means I understand
+  the domain problems UAE's financial institutions are trying to solve with AI —
+  not just the technology.
+
+  I'm actively targeting Dubai and Abu Dhabi. If you're building AI-native
+  systems in fintech, risk, or credit — let's talk.
+
+  type <span class="cmd">contact</span> to reach me
+`;
+    },
+  },
+
+  relocate: {
+    desc: "relocation intent",
+    fn: () => {
+      return `
+  <span class="bold white">Relocation</span>
+
+  <span class="accent">•</span> Currently based in Bengaluru, India
+  <span class="accent">•</span> Actively targeting Dubai & Abu Dhabi
+  <span class="accent">•</span> UAE's AI & fintech ecosystem is exactly where I want to build
+  <span class="accent">•</span> Open to relocation discussions immediately
+
+  type <span class="cmd">contact</span> to start the conversation
+`;
     },
   },
 
@@ -394,10 +479,11 @@ const commands = {
       return `
   <span class="bold white success">Let's work together!</span>
 
-  <span class="accent">•</span> I bring strong engineering skills
-  <span class="accent">•</span> Experience with scalable systems
-  <span class="accent">•</span> Team player & mentor
-  <span class="accent">•</span> Always learning, always shipping
+  <span class="accent">•</span> 12+ years across data science, ML & applied AI
+  <span class="accent">•</span> Building LLM-native systems in fintech (pricing, credit, risk)
+  <span class="accent">•</span> Proven at shipping fast with AI-assisted development
+  <span class="accent">•</span> Deep domain: banking, credit intelligence, financial analytics
+  <span class="accent">•</span> Open to Dubai / Abu Dhabi — UAE's AI & fintech ecosystem
 
   type <span class="cmd">contact</span> to get in touch
 `;
@@ -411,9 +497,9 @@ const commands = {
       }
       const term = args.join(' ').toLowerCase();
       const searchable = [
-        { cmd: 'whoami', keywords: ['parthiban', 'gowthaman', 'onci', 'about', 'ml', 'bengaluru'] },
-        { cmd: 'experience', keywords: ['work', 'job', 'career', 'onci', 'flex', 'flextronics', 'quantium', 'history', 'vp', 'manager'] },
-        { cmd: 'skills', keywords: ['python', 'llm', 'llms', 'evals', 'agentic', 'automation', 'machine learning', 'tech', 'stack'] },
+        { cmd: 'whoami', keywords: ['parthiban', 'gowthaman', 'oaknorth', 'about', 'ml', 'bengaluru', 'dubai', 'abu dhabi', 'uae'] },
+        { cmd: 'experience', keywords: ['work', 'job', 'career', 'oaknorth', 'flex', 'flextronics', 'quantium', 'history', 'vp', 'manager', 'pricing', 'credit intelligence'] },
+        { cmd: 'skills', keywords: ['python', 'llm', 'llms', 'evals', 'agentic', 'automation', 'machine learning', 'tech', 'stack', 'rag', 'langchain', 'sql', 'pricing'] },
         { cmd: 'projects', keywords: ['project', 'build', 'portfolio', 'terminal', 'claude'] },
         { cmd: 'education', keywords: ['degree', 'university', 'masters', 'bachelor', 'anna', 'madras', 'economics'] },
         { cmd: 'contact', keywords: ['email', 'linkedin', 'social', 'hire', 'reach'] },
@@ -635,7 +721,7 @@ async function boot() {
   const lines = [
     "initializing terminal...",
     "loading modules... done",
-    "connecting to parthiban.dev... connected",
+    "open to Dubai · Abu Dhabi · remote",
   ];
 
   for (const line of lines) {
