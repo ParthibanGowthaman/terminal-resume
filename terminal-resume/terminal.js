@@ -290,7 +290,7 @@ const commands = {
   <span class="bold white">Contact</span>
 
   • <a href="https://www.linkedin.com/in/parthiban-gowthaman-50257017/" target="_blank" rel="noopener">LinkedIn</a>
-  • <a href="https://github.com/ParthibanGowthaman" target="_blank" rel="noopener">GitHub</a>
+  • <a href="https://github.com/ParthibanGowthaman/terminal-resume" target="_blank" rel="noopener">GitHub</a>
   • <a href="mailto:gowthamparthiban@gmail.com">Email</a>
   • <span class="muted">Bengaluru, India · Open to Dubai / Abu Dhabi</span>
 `;
