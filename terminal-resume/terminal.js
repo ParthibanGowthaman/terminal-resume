@@ -85,8 +85,7 @@ const commands = {
 
   12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech.
 
-  type <span class="cmd">experience</span> to see my work history
-  type <span class="cmd">skills</span> to see my technical stack
+  <span class="muted">→ next:</span> <span class="cmd">experience</span>
 `;
     },
   },
@@ -133,7 +132,7 @@ const commands = {
   <span class="accent">Predictive Data Analyst</span> <span class="muted">@ Quantium Analytics</span>
   <span class="muted">Jun 2013 - Apr 2015 | Hyderabad, India</span>
 
-  <span class="muted">type</span> <span class="cmd">skills</span> <span class="muted">to see my tech stack</span>
+  <span class="muted">→ next:</span> <span class="cmd">skills</span>
 `;
     },
   },
@@ -172,7 +171,7 @@ const commands = {
   <span class="accent">•</span> Azure ML Studio
   <span class="accent">•</span> Google Cloud Platform
 
-  <span class="muted">type</span> <span class="cmd">projects</span> <span class="muted">to see what I've built</span>
+  <span class="muted">→ next:</span> <span class="cmd">projects</span>
 `;
     },
   },
@@ -277,6 +276,8 @@ const commands = {
   member to pull the latest BEA and Census datasets with a single API call.
   This eliminated manual effort, ensured data freshness and consistency
   across the team, and freed up analyst time for higher-value work.
+
+  <span class="muted">→ next:</span> <span class="cmd">contact</span>
 `;
     },
   },
@@ -293,6 +294,8 @@ const commands = {
   • <a href="https://github.com/ParthibanGowthaman/terminal-resume" target="_blank" rel="noopener">GitHub</a>
   • <a href="mailto:gowthamparthiban@gmail.com">Email</a>
   • <span class="muted">Bengaluru, India · Open to Dubai / Abu Dhabi</span>
+
+  <span class="muted">→ that's the full picture. let's talk.</span>
 `;
     },
   },
@@ -485,7 +488,7 @@ const commands = {
   <span class="accent">•</span> Deep domain: banking, credit intelligence, financial analytics
   <span class="accent">•</span> Open to Dubai / Abu Dhabi — UAE's AI & fintech ecosystem
 
-  type <span class="cmd">contact</span> to get in touch
+  <span class="muted">→ start here:</span> <span class="cmd">whoami</span>
 `;
     },
   },
