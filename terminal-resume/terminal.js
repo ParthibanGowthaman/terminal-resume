@@ -742,13 +742,13 @@ async function boot() {
   await sleep(100);
 
   output.innerHTML += `
-<div class="welcome-text">AI engineer building LLM-native systems in fintech.
-12+ years across data science, ML & applied AI  ·  open to Dubai / Abu Dhabi
+<div class="welcome-text">open to Dubai / Abu Dhabi · Remote
 </div>
 `;
   scrollToBottom();
 
-  await typeOutput(commands.pitch.fn() + "\n");
+  const pitchOutput = commands.pitch.fn().replace('<span class="bold white">The Pitch</span>\n', '').replace('\n\n\n', '\n\n');
+  await typeOutput(pitchOutput + "\n");
 
   if (!isMobile()) document.getElementById("command-input").focus();
 }
@@ -822,6 +822,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById("terminal").addEventListener("click", (e) => {
+    const cmdSpan = e.target.closest("#output .cmd");
+    if (cmdSpan) {
+      const cmd = cmdSpan.textContent.trim();
+      if (cmd) {
+        executeCommand(cmd);
+        return;
+      }
+    }
     if (e.target.tagName !== "A" && !e.target.closest(".cmd-shortcut")) {
       if (state.isTyping && state.skipTyping) {
         state.skipTyping();

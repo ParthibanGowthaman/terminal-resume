@@ -385,6 +385,8 @@ a:hover {
 #output .bold.white { font-weight: 600; color: var(--text-primary); }
 #output a { color: var(--link); }
 #output a:hover { color: var(--accent-hover); }
+#output .cmd { cursor: pointer; }
+#output .cmd:hover { text-decoration: underline; }
 
 .ascii-art {
     font-size: 10px;
