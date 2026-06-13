@@ -739,12 +739,6 @@ async function boot() {
   ██║     ██║  ██║██║  ██║   ██║   ██║  ██║██║██████╔╝██║  ██║██║ ╚████║
   ╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝</span>`;
   output.innerHTML += `<span class="ascii-name bold accent">  PARTHIBAN</span>`;
-  await sleep(100);
-
-  output.innerHTML += `
-<div class="welcome-text">open to Dubai / Abu Dhabi · Remote
-</div>
-`;
   scrollToBottom();
 
   const pitchOutput = commands.pitch.fn().replace('<span class="bold white">The Pitch</span>\n', '').replace('\n\n\n', '\n\n');
