@@ -385,7 +385,7 @@ const commands = {
   I'm actively targeting Dubai and Abu Dhabi. If you're building AI-native
   systems in fintech, risk, or credit — let's talk.
 
-  type <span class="cmd">contact</span> to reach me
+  <span class="muted">→ start here:</span> <span class="cmd">whoami</span>
 `;
     },
   },
