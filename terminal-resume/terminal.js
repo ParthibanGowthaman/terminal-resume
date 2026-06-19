@@ -114,20 +114,14 @@ const commands = {
   <span class="accent">AI-native Engineer</span> <span class="muted">@ OakNorth Bank</span>
   <span class="muted">Apr 2026 - Present | Pricing Optimization Pod | Bengaluru, India</span>
 
-  <span class="accent">VP Machine Learning</span> <span class="muted">@ OakNorth Credit Intelligence</span>
-  <span class="muted">Apr 2025 - Apr 2026 | Bengaluru, India</span>
+  <span class="accent">OakNorth Credit Intelligence</span> <span class="muted">| Nov 2021 - Apr 2026 | Bengaluru, India</span>
+  <span class="muted">  ↳ VP Machine Learning</span>   <span class="muted">Apr 2025 - Apr 2026</span>
+  <span class="muted">  ↳ DVP Machine Learning</span>  <span class="muted">Apr 2023 - Apr 2025</span>
+  <span class="muted">  ↳ AVP Machine Learning</span>  <span class="muted">Nov 2021 - May 2023</span>
 
-  <span class="accent">DVP Machine Learning</span> <span class="muted">@ OakNorth Credit Intelligence</span>
-  <span class="muted">Apr 2023 - Apr 2025 | Bengaluru, India</span>
-
-  <span class="accent">AVP Machine Learning</span> <span class="muted">@ OakNorth Credit Intelligence</span>
-  <span class="muted">Nov 2021 - May 2023 | Bengaluru, India</span>
-
-  <span class="accent">Manager - Advanced Analytics COE</span> <span class="muted">@ Flex</span>
-  <span class="muted">Jul 2017 - Oct 2021 | Chennai, India</span>
-
-  <span class="accent">Asst. Manager - Advanced Analytics COE</span> <span class="muted">@ Flextronics</span>
-  <span class="muted">May 2015 - 2017 | Chennai, India</span>
+  <span class="accent">Flex (Flextronics)</span> <span class="muted">| May 2015 - Oct 2021 | Chennai, India</span>
+  <span class="muted">  ↳ Manager - Advanced Analytics COE</span>       <span class="muted">Jul 2017 - Oct 2021</span>
+  <span class="muted">  ↳ Asst. Manager - Advanced Analytics COE</span>  <span class="muted">May 2015 - 2017</span>
 
   <span class="accent">Predictive Data Analyst</span> <span class="muted">@ Quantium Analytics</span>
   <span class="muted">Jun 2013 - Apr 2015 | Hyderabad, India</span>
