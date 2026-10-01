@@ -76,12 +76,12 @@ const commands = {
     fn: () => {
       return `
   <span class="bold white">Parthiban Gowthaman</span>
-  ┌─────────────────────────────────────────────────────┐
-  │  AI-native Engineer @ OakNorth Bank                  │
-  │  Pricing Optimization Pod                            │
-  │  Location: Bengaluru, India                          │
-  │  Target: Dubai / Abu Dhabi · Open to opportunities   │
-  └─────────────────────────────────────────────────────┘
+  ┌──────────────────────────────────────────────────────────────┐
+  │  AI-native Engineer @ OakNorth Bank                          │
+  │  Pricing Optimization Pod                                    │
+  │  Location: Bengaluru, India                                  │
+  │  Target: Bengaluru / Chennai / Hyderabad / Dubai / Abu Dhabi │
+  └──────────────────────────────────────────────────────────────┘
 
   12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech.
 
@@ -100,7 +100,7 @@ const commands = {
     fn: () => {
       return `
   <span class="bold white">Parthiban Gowthaman</span> — AI-native Engineer @ OakNorth Bank (Pricing Optimization).
-  12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech. Targeting Dubai / Abu Dhabi.
+  12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech. Targeting Bengaluru, Chennai, Hyderabad, Dubai & Abu Dhabi.
 `;
     },
   },
@@ -289,7 +289,7 @@ const commands = {
   • <a href="https://www.linkedin.com/in/parthiban-gowthaman-50257017/" target="_blank" rel="noopener">LinkedIn</a>
   • <a href="https://github.com/ParthibanGowthaman/terminal-resume" target="_blank" rel="noopener">GitHub</a>
   • <a href="mailto:gowthamparthiban@gmail.com">Email</a>
-  • <span class="muted">Bengaluru, India · Open to Dubai / Abu Dhabi</span>
+  • <span class="muted">Bengaluru, India · Open to Chennai / Hyderabad / Dubai / Abu Dhabi</span>
 
   <span class="muted">→ that's the full picture. let's talk.</span>
 `;
@@ -375,10 +375,10 @@ const commands = {
   in production, in fintech, where accuracy and reliability actually matter.
 
   I come from banking and credit intelligence, which means I understand
-  the domain problems UAE's financial institutions are trying to solve with AI —
+  the domain problems financial institutions are trying to solve with AI —
   not just the technology.
 
-  I'm actively targeting Dubai and Abu Dhabi. If you're building AI-native
+  I'm actively targeting Bengaluru, Chennai, Hyderabad, Dubai and Abu Dhabi. If you're building AI-native
   systems in fintech, risk, or credit — let's talk.
 
   <span class="muted">→ start here:</span> <span class="cmd">whoami</span>
@@ -393,8 +393,8 @@ const commands = {
   <span class="bold white">Relocation</span>
 
   <span class="accent">•</span> Currently based in Bengaluru, India
-  <span class="accent">•</span> Actively targeting Dubai & Abu Dhabi
-  <span class="accent">•</span> UAE's AI & fintech ecosystem is exactly where I want to build
+  <span class="accent">•</span> Actively targeting Bengaluru, Chennai, Hyderabad, Dubai & Abu Dhabi
+  <span class="accent">•</span> The AI & fintech ecosystem is exactly where I want to build
   <span class="accent">•</span> Open to relocation discussions immediately
 
   type <span class="cmd">contact</span> to start the conversation
@@ -482,7 +482,7 @@ const commands = {
   <span class="accent">•</span> Building LLM-native systems in fintech (pricing, credit, risk)
   <span class="accent">•</span> Proven at shipping fast with AI-assisted development
   <span class="accent">•</span> Deep domain: banking, credit intelligence, financial analytics
-  <span class="accent">•</span> Open to Dubai / Abu Dhabi — UAE's AI & fintech ecosystem
+  <span class="accent">•</span> Open to Bengaluru / Chennai / Hyderabad / Dubai / Abu Dhabi
 
   <span class="muted">→ start here:</span> <span class="cmd">whoami</span>
 `;
@@ -720,7 +720,7 @@ async function boot() {
   const lines = [
     "initializing terminal...",
     "loading modules... done",
-    "open to Dubai · Abu Dhabi · remote",
+    "open to Bengaluru · Chennai · Hyderabad · Dubai · Abu Dhabi",
   ];
 
   for (const line of lines) {
