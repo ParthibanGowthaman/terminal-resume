@@ -536,11 +536,11 @@ const commands = {
       const term = args.join(' ').toLowerCase();
       const searchable = [
         { cmd: 'whoami', keywords: ['parthiban', 'gowthaman', 'oaknorth', 'about', 'ml', 'bengaluru', 'dubai', 'abu dhabi', 'uae'] },
-        { cmd: 'experience', keywords: ['work', 'job', 'career', 'oaknorth', 'flex', 'flextronics', 'quantium', 'history', 'vp', 'manager', 'pricing', 'credit intelligence'] },
-        { cmd: 'skills', keywords: ['python', 'llm', 'llms', 'evals', 'agentic', 'automation', 'machine learning', 'tech', 'stack', 'rag', 'langchain', 'sql', 'pricing'] },
-        { cmd: 'projects', keywords: ['project', 'build', 'portfolio', 'terminal', 'claude'] },
-        { cmd: 'education', keywords: ['degree', 'university', 'masters', 'bachelor', 'anna', 'madras', 'economics'] },
-        { cmd: 'contact', keywords: ['email', 'linkedin', 'social', 'hire', 'reach'] },
+        { cmd: 'experience', keywords: ['work', 'job', 'career', 'oaknorth', 'flex', 'flextronics', 'quantium', 'history', 'vp', 'manager', 'pricing', 'credit intelligence', 'forward deployed', 'fde', 'treasury'] },
+        { cmd: 'skills', keywords: ['python', 'llm', 'llms', 'evals', 'agentic', 'automation', 'machine learning', 'tech', 'stack', 'rag', 'langchain', 'sql', 'pricing', 'mcp', 'docker', 'mlflow', 'bigquery', 'dbt', 'git', 'pytorch', 'tensorflow', 'vertex', 'sagemaker', 'azure', 'crewai', 'mlops'] },
+        { cmd: 'projects', keywords: ['project', 'build', 'portfolio', 'terminal', 'claude', 'what-if', 'whatif', '10-k', 'earnings', 'genai', 'transformation'] },
+        { cmd: 'education', keywords: ['degree', 'university', 'masters', 'bachelor', 'anna', 'madras', 'economics', 'certification', 'certifications', 'anthropic', 'crewai'] },
+        { cmd: 'contact', keywords: ['email', 'linkedin', 'social', 'hire', 'reach', 'portfolio', 'vercel'] },
       ];
       const matches = searchable.filter(s => s.keywords.some(k => k.includes(term) || term.includes(k)));
       if (matches.length === 0) {
