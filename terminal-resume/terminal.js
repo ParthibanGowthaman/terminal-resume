@@ -83,7 +83,7 @@ const commands = {
   │  Target: Bengaluru / Chennai / Hyderabad / Dubai / Abu Dhabi │
   └──────────────────────────────────────────────────────────────┘
 
-  12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech.
+  13+ years across data science, ML & applied AI. Now building LLM-native systems in fintech.
 
   <span class="muted">→ next:</span> <span class="cmd">experience</span>
 `;
@@ -100,7 +100,7 @@ const commands = {
     fn: () => {
       return `
   <span class="bold white">Parthiban Gowthaman</span> — AI-native Engineer @ OakNorth Bank (Pricing Optimization).
-  12+ years across data science, ML & applied AI. Now building LLM-native systems in fintech. Targeting Bengaluru, Chennai, Hyderabad, Dubai & Abu Dhabi.
+  13+ years across data science, ML & applied AI. Now building LLM-native systems in fintech. Targeting Bengaluru, Chennai, Hyderabad, Dubai & Abu Dhabi.
 `;
     },
   },
@@ -113,6 +113,9 @@ const commands = {
 
   <span class="accent">AI-native Engineer</span> <span class="muted">@ OakNorth Bank</span>
   <span class="muted">Apr 2026 - Present | Pricing Optimization Pod | Bengaluru, India</span>
+  Forward Deployed Engineer embedded with treasury & pricing teams —
+  building LLM-native, agentic decision systems that turn pricing
+  challenges into production AI, with human judgment at the centre.
 
   <span class="accent">OakNorth Credit Intelligence</span> <span class="muted">| Nov 2021 - Apr 2026 | Bengaluru, India</span>
   <span class="muted">  ↳ VP Machine Learning</span>   <span class="muted">Apr 2025 - Apr 2026</span>
@@ -148,21 +151,28 @@ const commands = {
   <span class="accent">•</span> RAG Pipelines & Vector Databases
   <span class="accent">•</span> LLM Evals & Prompt Engineering
   <span class="accent">•</span> Claude API · Prompt Caching · Batch Processing
+  <span class="accent">•</span> MCP (Model Context Protocol)
 
   <span class="accent">Machine Learning & Data Science</span>
   <span class="accent">•</span> Predictive Modelling & Statistical Analysis
   <span class="accent">•</span> Time Series Forecasting
   <span class="accent">•</span> Pricing Optimization
   <span class="accent">•</span> Credit Risk & Financial Analytics
+  <span class="accent">•</span> Scikit-Learn · TensorFlow · PyTorch
+  <span class="accent">•</span> Hypothesis Testing
 
   <span class="accent">Languages & Tools</span>
-  <span class="accent">•</span> Python · SQL
+  <span class="accent">•</span> Python · SQL · Git
+  <span class="accent">•</span> BigQuery · dbt
   <span class="accent">•</span> REST APIs · BEA API · Census API
   <span class="accent">•</span> Claude Code (AI-assisted development)
   <span class="accent">•</span> Firecrawl
 
+  <span class="accent">MLOps</span>
+  <span class="accent">•</span> Docker · MLflow · GitHub · CI/CD
+
   <span class="accent">Cloud Platforms</span>
-  <span class="accent">•</span> Azure ML Studio
+  <span class="accent">•</span> Azure ML · Vertex AI · AWS SageMaker
   <span class="accent">•</span> Google Cloud Platform
 
   <span class="muted">→ next:</span> <span class="cmd">projects</span>
@@ -179,6 +189,12 @@ const commands = {
   <span class="accent">AI Coding for Real Engineers</span>
   <span class="muted">Matt Pocock | Jun 2026</span>
   <span class="muted">Claude Code · Steering · Planning · Feedback Loops · AFK Agents · Human-in-the-Loop Patterns</span>
+
+  <span class="accent">Agent Skills with Anthropic</span>
+
+  <span class="accent">Multi AI Agent Systems with CrewAI</span>
+
+  <span class="accent">Building Systems with LLMs</span>
 
   <span class="bold white">Education</span>
 
@@ -213,6 +229,14 @@ const commands = {
   rate environment. What was a manual, reactive process is now a
   real-time competitive intelligence feed.
 
+  <span class="accent">[+] deposit-pricing-whatif-model</span> <span class="muted">[OakNorth Bank]</span>
+  <span class="muted">Tools: Python, Machine Learning, BigQuery</span>
+  Treasury needs a data-driven basis for setting savings rates, not gut
+  feel. I built an ML what-if model trained on historical rate, best-buy
+  rank and inflow data that predicts expected deposit inflows and
+  reinvestment outcomes for each pricing choice — letting the team compare
+  rate decisions before committing to them.
+
   <span class="accent">[+] terminal-resume</span> <span class="success">[this site!]</span>
   <span class="muted">Interactive CLI-style resume website</span>
   Built with Claude Code, verified by a human.
@@ -228,6 +252,20 @@ const commands = {
   would typically take a quarter or more. The new engine supports dynamic
   scenario modeling across CRE loan portfolios using macroeconomic
   indicators, giving credit analysts richer stress-testing capabilities.
+
+  <span class="accent">[+] earnings-10k-intelligence</span> <span class="muted">[OakNorth Credit Intelligence]</span>
+  <span class="muted">Tools: Python, Claude API, RAG, Structured Extraction</span>
+  Earnings transcripts and 10-K filings are long, dense and time-critical.
+  I built automated intelligence systems combining prompt engineering, RAG
+  and structured extraction on the Claude API to turn unstructured
+  disclosures into decision-ready insights for credit analysts.
+
+  <span class="accent">[+] genai-transformation</span> <span class="muted">[OakNorth Credit Intelligence]</span>
+  <span class="muted">Tools: LLM Engineering, Evals, Reusable AI Patterns</span>
+  Led the organization's GenAI transformation from the CEO's office —
+  establishing LLM engineering standards, evaluation practices and reusable
+  AI patterns, and shifting adoption from isolated experiments to
+  repeatable, production-oriented workflows embedded in daily decisions.
 
   <span class="accent">[+] customer-insights-automation</span> <span class="muted">[OakNorth Credit Intelligence]</span>
   <span class="muted">Tools: Python, Claude API, Prompt Engineering</span>
@@ -288,6 +326,7 @@ const commands = {
 
   • <a href="https://www.linkedin.com/in/parthiban-gowthaman-50257017/" target="_blank" rel="noopener">LinkedIn</a>
   • <a href="https://github.com/ParthibanGowthaman/terminal-resume" target="_blank" rel="noopener">GitHub</a>
+  • <a href="https://parthiban-g.vercel.app/" target="_blank" rel="noopener">Portfolio</a>
   • <a href="mailto:gowthamparthiban@gmail.com">Email</a>
   • <span class="muted">Bengaluru, India · Open to Chennai / Hyderabad / Dubai / Abu Dhabi</span>
 
@@ -366,7 +405,7 @@ const commands = {
       return `
   <span class="bold white">The Pitch</span>
 
-  I'm an AI engineer with 12+ years across data science, ML & applied AI —
+  I'm an AI engineer with 13+ years across data science, ML & applied AI —
   now building LLM-native systems at OakNorth Bank in the Pricing
   Optimization pod.
 
@@ -478,7 +517,7 @@ const commands = {
       return `
   <span class="bold white success">Let's work together!</span>
 
-  <span class="accent">•</span> 12+ years across data science, ML & applied AI
+  <span class="accent">•</span> 13+ years across data science, ML & applied AI
   <span class="accent">•</span> Building LLM-native systems in fintech (pricing, credit, risk)
   <span class="accent">•</span> Proven at shipping fast with AI-assisted development
   <span class="accent">•</span> Deep domain: banking, credit intelligence, financial analytics
